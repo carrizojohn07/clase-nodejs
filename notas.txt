@@ -1,0 +1,19 @@
+node.js es un entorno de ejecucion fuera del navegador para crear apis
+npm nos permite inicializar nuestros proyectos (npm init -y)  
+e instalar paquetes y modulos de terceros  (npm i express)
+express es un framework (libreria) que nos facilita el uso de node js 
+
+pasos para crear un proyecto
+1) crear la carpeta del proyecto 
+2) npm init -y  -> inicia el proyecto y crea el archivo package.json (descripcion del proyecto, depedencias de terceros, script de ejecucion)
+3) en package.json  vamos a modificar el 
+    type ="module" 
+    "start": "node index.js" (script para iniciar el pryecto)
+    "dev" : "node --watch index.js" (script para desarrollo toma los cambos de forma automatica)
+4) npm i express -> instalamos express 
+5)  creamos servidor en index.js 
+    import express from 'express'
+    const app = express
+    const port = 3000
+    app.listen(port, () => {console.log('servidor en puerto ${port})'})
+6) ejecutamos el servidor : node index.js o npm run start 
