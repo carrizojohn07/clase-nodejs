@@ -5,7 +5,8 @@ express es un framework (libreria) que nos facilita el uso de node js
 
 pasos para crear un proyecto
 1) crear la carpeta del proyecto 
-2) npm init -y  -> inicia el proyecto y crea el archivo package.json (descripcion del proyecto, depedencias de terceros, script de ejecucion)
+2) npm init -y  -> inicia el proyecto y crea el archivo 
+package.json (descripcion del proyecto, depedencias de terceros, script de ejecucion)
 3) en package.json  vamos a modificar el 
     type ="module" 
     "start": "node index.js" (script para iniciar el pryecto)

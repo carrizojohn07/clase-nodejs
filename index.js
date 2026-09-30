@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const app = express();
 const port = 3000;
 
@@ -29,7 +29,6 @@ app.get("/personas/:id", (req, res) => {
 //middleware para crear una persona
 app.post("/personas", (req, res) => {
     console.log(req.body);
-    res.send('creando persona');
     const nuevaid = personas.length + 1;
     const nuevaPersona = 
     { id: nuevaid, 
